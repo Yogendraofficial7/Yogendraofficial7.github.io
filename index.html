@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>M Yogendra Kumar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">M Yogendra Kumar</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello! 👋</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Yogendra Kumar</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'DevOps Engineer',
+						'With 5+ years of experience',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <!-- <h2>A DevOps Engineer</h2> -->
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/@Yogendraofficial7" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/Yogendraofficial7" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>M Yogendra Kumar</span></p>
+										<p><span class="title-s">Job Role: </span> <span>DevOps Engineer</span></p>
+										<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>AWS</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 82%;" aria-valuenow="82" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Linux</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Git & GitHub</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Jenkins</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Docker</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Kubernetes</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Terraform</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Ansible</span> <span class="pull-right"></span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p> I am a highly motivated, skilled and self-organized DevOps Engineer with 5+ years of
+									experience and passionate about learning new technologies and best practices in
+									DevOps and cloud management, and also, I am always eager to collaborate with other
+									professionals and teams. I am an enthusiast, hungry to learn and easily adaptable. 
+								   Seeking a technical position to fully utilizing strong customer service attitude,
+									exceptional organizational ability and technical skills. My goal is to use my skills to
+									contribute to the growth and success of the organization. </p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>DevOps Engineer</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>AWS DevOps</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Telugu, Hindi</span></li>
+									<li class="d-flex"><span>DevOps Tools:</span> <span>Git, GitHub, Jenkins, Docker, Kubernetes, Terraform &amp; Ansible</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Aws Cloud Services, Shell Scripting, Maven, SonarQube, Nginx, Tomcat, Python, JIRA, Grafana, Prometheus &amp; Nagios</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Learning about new Technologies, Listening Music, Surfing browser, Playing Cricket &amp; Chess </span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="7">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/m-yogendra-kumar/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>DevOps Engineer with 5+ years of experience in Managing and Automating Software Deployments, Infrastructure, System Administration and Driving Continuous Integration/Delivery.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June 2023 - Sep 2023</span>
+						<h2>DevOps Engineer</h2>
+						<span class="position">Flipkart Internet Pvt Ltd, Bangalore</span>
+						<p class="mt-4">Flipkart Internet Pvt Ltd, It is one of India’s leading E-commerce marketplaces and is headquartered in Bengaluru. 
+							<ul>
+								<li>Administration of Git tools include creating branches, tagging, access permissions.</li>
+								<li>Experience in Creating branches and tags to separate build system after a milestone releases and create build storage archives for back tracking builds.</li>
+								<li>Worked on configuring and monitoring Kubernetes cluster and application metrics using tools like Nagios, Grafana and Prometheus.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Sep 2022 - May 2023</span>
+						<h2>DevOps Engineer</h2>
+						<span class="position">Wipro Limited, Bangalore</span>
+						<p class="mt-4">Wipro Limited is an Indian multinational corporation that provides information technology, consultant and business process services. It is one of the leading Big Tech companies. 
+							<ul>
+								<li>Responsible for moving on-premises applications to AWS Cloud by using DevOps tools.</li>
+								<li>There will be minimum 2 to 3 environments for every application like UAT, Dev and Prod. We will proceed with the UAT/Dev once everything goes smooth then will start with the Prod environment.</li>
+								<li> Supporting and helping to the app team till app goes live. Then will handover it to the Operations team.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 2018 - Aug 2022</span>
+						<h2>DevOps Engineer</h2>
+						<span class="position">Hdb Financial Services Limited, Hyderabad</span>
+						<p class="mt-4">HDB Financial Services Limited is a subsidiary company of HDFC Bank. 
+							<ul>
+								<li>Worked with Docker files as per the Requirement, Building, pushing to Docker repository and deploying it into Kubernetes.</li>
+								<li>Automated the entire CI/CD process through the Jenkins pipelines by integrating the technologies such as Ansible, Docker, Maven, Git and Kubernetes.</li>
+								<li>Involved in designing and deploying a multitude application utilizing most all of the AWS stack such as EC2, EKS, VPC, S3, RDS, SNS, IAM and focusing on high availability and auto scaling.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2010-2014</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Jawaharlal Nehru Technological University Ananthapur</span>
+    					<p class="mt-4">Grade: First class Merit.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2008-2010</span>
+    					<h2>Board of Intermediate</h2>
+    					<span class="position">Rayalseema Junior College, Andhra Pradesh</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1JwUG8UCXlUJi1FY27UPpV86wS0o_xoBg/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the some sample DevOps projects.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Yogendraofficial7/Zomato-Clone.git" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Yogendraofficial7/Zomato-Clone.git">Deploying Zomoto Clone App</a></h3>
+                <p>Deploying a food ordering application i.e., Zomoto clone app using Jenkins as a CiCd tool and Docker as a container.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/Yogendraofficial7/Hotstar-Clone.git" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Yogendraofficial7/Hotstar-Clone.git">Deploying a Secure Hotstar Clone app</a></h3>
+                <p>Deploying a secure Hotstar clone app using Docker, Jenkins, Java, SonarQube, AWS CLI, Kubectl, and Terraform, to automate, secure, and streamline the deployment pipeline.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Yogendraofficial7/Myntra-Clone.git" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Yogendraofficial7/Myntra-Clone.git">Deploying a Myntra Clone app</a></h3>
+                <p>Deploying a E-Commerce application i.e., Myntra clone app using Docker, SonarQube, Eks, Terraform.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		
+	</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section" style="background-image: url(images/bg_1.jpg)">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bengaluru, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://6361404242">+91 - 6361404242</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">yogendra.devopseng007@outlook.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1JwUG8UCXlUJi1FY27UPpV86wS0o_xoBg/view?usp=drive_link">resumelink</a></p>
+	          </div>
+          </div>
+  
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+   </div>
+ </section>
+
+ <section id="ftco-section contact-section ftco-no-pb" class="contact">
+	<div class="container" data-aos="fade-up">
+
+	  <div class="section-title">
+		<figure class="text-center">
+			<h2>Any Queries</h2>
+		</figure>
+	  </div>
+
+	  <div class="row mt-1">
+
+		<div class="col-lg-4">
+		  <div class="info">
+			<!--<div class="address">
+			  <i class="bi bi-geo-alt"></i>
+			  <h4>Location:</h4>
+			  <p>Pune, India</p>
+			</div>
+
+			<div class="email">
+			  <i class="bi bi-envelope"></i>
+			  <h4>Email:</h4>
+			  <p>sudhajobs0107@gmail.com</p>
+			</div>
+
+			 <div class="phone">
+			  <i class="bi bi-phone"></i>
+			  <h4>Call:</h4>
+			  <p>+91 9518 1360 96</p>
+			</div> -->
+
+		  </div>
+
+		</div>
+
+		<div class="col-lg-8 mt-5 mt-lg-0">
+
+		  <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="contact-form">
+			<div class="row">
+			  <div class="col-md-6 form-group">
+				<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+			  </div>
+			  <div class="col-md-6 form-group mt-3 mt-md-0">
+				<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+			  </div>
+			</div>
+			<div class="form-group mt-3">
+			  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+			</div>
+			<div class="form-group mt-3">
+			  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+			</div>
+			<div class="my-3">
+			  <div class="loading">Loading</div>
+			  <div class="error-message"></div>
+			  <div class="sent-message">Your message has been sent. Thank you!</div>
+			</div>
+			<div class="text-center"><button type="submit">Send Message</button></div>
+		  </form>
+
+		</div>
+
+	  </div>
+
+	</div>
+  </section>
+
+
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		<figure class="text-center">	
+			<h3>M YOGENDRA KUMAR</h3>
+			<figure class="text-center">
+				<blockquote class="blockquote">
+					<p>"Go confidently in the direction of your dreams! Live the life you've imagined."</p>
+				</blockquote>
+				<figcaption class="blockquote-footer">
+					Henry David Thoreau <cite title="Source Title"></cite>
+				</figcaption>
+			</figure>
+		</figure>
+
+		<br>
+		<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+		  <li class="ftco-animate normal-txt">Reach me out on  </li>
+		  <li class="ftco-animate"><a href="https://www.youtube.com/@Yogendraofficial7"><span class="icon-youtube"></span></a></li>
+		  <li class="ftco-animate"><a href="https://www.linkedin.com/in/m-yogendra-kumar/"><span class="icon-linkedin"></span></a></li>
+		  <li class="ftco-animate"><a href="https://github.com/Yogendraofficial7"><span class="icon-github"></span></a></li>  
+		  <li class="ftco-animate"><a href="https://twitter.com/myogendrakumar7"><span class="icon-twitter"></span></a></li>
+		  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100010281942361"><span class="icon-facebook"></span></a></li>
+		  <li class="ftco-animate"><a href="https://www.instagram.com/im_yogi07/"><span class="icon-instagram"></span></a></li>
+		</ul>
+		<br>
+
+			<div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<div class="copyright">
+					&copy; Copyright <strong><span>M YOGENDRA KUMAR</span></strong>. All Rights Reserved
+				</div>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
